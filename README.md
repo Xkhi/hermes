@@ -1,9 +1,9 @@
 # Project Hermes 
 
 Property of [Waseda University](https://www.waseda.jp/top/en) [Graduate School of Creative Science and Engineering](http://www.cse.sci.waseda.ac.jp/en/).
-Developed by [Javier Alvarez](javier.alvarez@akane.waseda.jp).
+Developed by [Javier Alvarez](mailto:javier.alvarez@akane.waseda.jp).
 
-Project Hermes is a communication HUB for sensors, developed specifically for WU's Sensor Team in Sugano Lab. 
+Project Hermes is a communication hub for sensors, developed specifically for WU's Sensor Team in Sugano Lab. 
 
 ## Status
 - [ ] Requirements definition
@@ -24,12 +24,9 @@ The aim for the device are listed as follows:
 * Power input 5V~12V
 * Achieve form factor of 1:1 with a size of 3.0cm
 
-## Disclaimer
-This design is based on [IIT](https://www.iit.it)'s MTB device.
-
 ## Contact
 
 For questions regarding the device:
 
-* Design: [Javier Alvarez](javier.alvarez@akane.waseda.jp)
-* Ownership: [Alexander Schmitz](schmitz.alexander@gmail.com), [Tito Tomo](tito@toki.waseda.jp), [Sophon Somlor](sophon@sugano.mech.waseda.ac.jp)
+* Design: [Javier Alvarez](mailto:javier.alvarez@akane.waseda.jp)
+* Ownership: [Alexander Schmitz](mailto:schmitz.alexander@gmail.com), [Tito Tomo](mailto:tito@toki.waseda.jp), [Sophon Somlor](mailto:sophon@sugano.mech.waseda.ac.jp)

@@ -22,7 +22,6 @@ The aim for the device are listed as follows:
 * Act as a communication HUB for, at least, 4 sensors, at best, 6 sensors
 * Provide a network for communication between devices, either daisy chain or common bus
 * Power input 5V~12V
-* Achieve form factor of 1:1 with a size of 3.0cm
 
 ## Contact
 

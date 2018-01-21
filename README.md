@@ -6,21 +6,21 @@ Developed by [Javier Alvarez](mailto:javier.alvarez@akane.waseda.jp).
 Project Hermes is a communication hub for sensors, developed specifically for WU's Sensor Team in Sugano Lab. 
 
 ## Status
-- [ ] Requirements definition
-- [ ] Conceptual design
-- [ ] Schematics
+- [x] Requirements definition
+- [x] Conceptual design
+- [x] Schematics
 - [ ] PCB
 - [ ] Manufacture
 - [ ] Programming
 
 ### Status Overview
-The project is in its initial state, with the requirements and concept still being defined.
+The project has finished establishing requirements, concepts and schematics, it is now in the PCB layout design stage.
 
 ## Specifications
 The aim for the device are listed as follows:
 
-* Act as a communication HUB for, at least, 4 sensors, at best, 6 sensors
-* Provide a network for communication between devices, either daisy chain or common bus
+* Act as a communication HUB for 5 sensors (I<sup>2</sup>C)
+* Provide a network for communication between devices by a common bus (I<sup>2</sup>C)
 * Power input 5V~12V
 
 ## Contact

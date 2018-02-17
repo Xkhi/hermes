@@ -360,6 +360,50 @@ DIN A4, landscape with location and doc. field</description>
 <smd name="P$1" x="0" y="0" dx="1.27" dy="0.635" layer="1"/>
 <text x="0.889" y="-0.1778" size="0.4064" layer="25">&gt;NAME</text>
 </package>
+<package name="PICO-BLADE4">
+<smd name="P$1" x="-4.425" y="0" dx="3" dy="2.1" layer="1" rot="R90"/>
+<smd name="P$2" x="4.425" y="0" dx="3" dy="2.1" layer="1" rot="R90"/>
+<smd name="P$3" x="-1.875" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$4" x="-0.625" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$5" x="0.625" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$6" x="1.875" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-3.4" y1="1.5" x2="-3.4" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="2.1" x2="-2.3" y2="2.1" width="0.127" layer="21"/>
+<wire x1="2.3" y1="2.1" x2="3.4" y2="2.1" width="0.127" layer="21"/>
+<wire x1="3.4" y1="2.1" x2="3.4" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1.5" x2="-5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1.6" x2="-3.4" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-1.6" x2="-3.4" y2="-2" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="-2" x2="3.4" y2="-2" width="0.127" layer="21"/>
+<wire x1="3.4" y1="-2" x2="3.4" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="3.4" y1="-1.6" x2="5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="5" y1="-1.6" x2="5" y2="-1.5" width="0.127" layer="21"/>
+<text x="-3" y="-3" size="0.6096" layer="25">&gt;NAME</text>
+</package>
+<package name="PICO-BLADE8">
+<smd name="P$1" x="-6.925" y="0" dx="3" dy="2.1" layer="1" rot="R90"/>
+<smd name="P$2" x="6.925" y="0" dx="3" dy="2.1" layer="1" rot="R90"/>
+<smd name="P$3" x="-4.375" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$4" x="-3.125" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$5" x="-1.875" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$6" x="-0.625" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<wire x1="-5.9" y1="1.5" x2="-5.9" y2="2.1" width="0.127" layer="21"/>
+<wire x1="-5.9" y1="2.1" x2="-4.8" y2="2.1" width="0.127" layer="21"/>
+<wire x1="4.8" y1="2.1" x2="5.9" y2="2.1" width="0.127" layer="21"/>
+<wire x1="5.9" y1="2.1" x2="5.9" y2="1.5" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-1.5" x2="-7.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-7.5" y1="-1.6" x2="-5.9" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-5.9" y1="-1.6" x2="-5.9" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5.9" y1="-2" x2="5.9" y2="-2" width="0.127" layer="21"/>
+<wire x1="5.9" y1="-2" x2="5.9" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="5.9" y1="-1.6" x2="7.5" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="7.5" y1="-1.6" x2="7.5" y2="-1.5" width="0.127" layer="21"/>
+<text x="-5.5" y="-3" size="0.6096" layer="25">&gt;NAME</text>
+<smd name="P$7" x="0.625" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$8" x="1.875" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$9" x="3.125" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$10" x="4.375" y="2.9" dx="1.6" dy="0.8" layer="1" rot="R90"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFN-48" urn="urn:adsk.eagle:package:1030298/2" type="model" library_version="6">
@@ -460,6 +504,12 @@ DIN A4, landscape with location and doc. field</description>
 <pin name="P$1" x="0" y="0" visible="off" length="short"/>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="1.27" layer="94"/>
 <text x="0" y="-2.54" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="PIN-NAME">
+<pin name="P$1" x="0" y="0" visible="off" length="short" direction="pas"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="1.27" layer="94"/>
+<text x="0" y="-2.54" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -640,6 +690,60 @@ DIN A4, landscape with location and doc. field</description>
 <device name="PIN" package="PAD5025">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICO-BLADE4" prefix="CONN">
+<gates>
+<gate name="-1" symbol="PIN-NAME" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="0" y="-15.24" addlevel="always" swaplevel="1"/>
+<gate name="-DICE" symbol="PIN" x="0" y="-20.32" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="PICO-BLADE4">
+<connects>
+<connect gate="-1" pin="P$1" pad="P$3"/>
+<connect gate="-2" pin="P$1" pad="P$4"/>
+<connect gate="-3" pin="P$1" pad="P$5"/>
+<connect gate="-4" pin="P$1" pad="P$6"/>
+<connect gate="-DICE" pin="P$1" pad="P$1 P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PICO-BLADE8" prefix="CONN">
+<gates>
+<gate name="-1" symbol="PIN-NAME" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="PIN" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="PIN" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="PIN" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-5" symbol="PIN" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-6" symbol="PIN" x="0" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="-7" symbol="PIN" x="0" y="-15.24" addlevel="always" swaplevel="1"/>
+<gate name="-8" symbol="PIN" x="0" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="-DICE" symbol="PIN" x="0" y="-20.32" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="PICO-BLADE8">
+<connects>
+<connect gate="-1" pin="P$1" pad="P$3"/>
+<connect gate="-2" pin="P$1" pad="P$4"/>
+<connect gate="-3" pin="P$1" pad="P$5"/>
+<connect gate="-4" pin="P$1" pad="P$6"/>
+<connect gate="-5" pin="P$1" pad="P$7"/>
+<connect gate="-6" pin="P$1" pad="P$8"/>
+<connect gate="-7" pin="P$1" pad="P$9"/>
+<connect gate="-8" pin="P$1" pad="P$10"/>
+<connect gate="-DICE" pin="P$1" pad="P$1 P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10670,26 +10774,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="+3V38" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PIN6" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN15" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN19" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN16" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN20" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN17" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN21" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN18" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN22" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN7" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN8" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
 <part name="+3V32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="PIN1" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN2" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN3" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN4" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
-<part name="PIN5" library="Hermes_lib" deviceset="SINGLE-" device="PIN"/>
+<part name="CONN1" library="Hermes_lib" deviceset="PICO-BLADE4" device=""/>
+<part name="CONN2" library="Hermes_lib" deviceset="PICO-BLADE4" device=""/>
+<part name="U$1" library="Hermes_lib" deviceset="PICO-BLADE8" device=""/>
+<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10780,26 +10872,30 @@ Sercom 5       -&gt; Master communication</text>
 <instance part="+3V38" gate="G$1" x="167.64" y="66.04"/>
 <instance part="P+4" gate="VCC" x="160.02" y="66.04"/>
 <instance part="GND12" gate="1" x="160.02" y="45.72"/>
-<instance part="PIN6" gate="G$1" x="20.32" y="35.56" rot="R180"/>
-<instance part="PIN15" gate="G$1" x="119.38" y="60.96" rot="R180"/>
-<instance part="PIN19" gate="G$1" x="127" y="60.96" rot="MR180"/>
-<instance part="PIN16" gate="G$1" x="119.38" y="55.88" rot="R180"/>
-<instance part="PIN20" gate="G$1" x="127" y="55.88" rot="MR180"/>
-<instance part="PIN17" gate="G$1" x="119.38" y="40.64" rot="R180"/>
-<instance part="PIN21" gate="G$1" x="127" y="40.64" rot="MR180"/>
-<instance part="PIN18" gate="G$1" x="119.38" y="35.56" rot="R180"/>
-<instance part="PIN22" gate="G$1" x="127" y="35.56" rot="MR180"/>
-<instance part="PIN7" gate="G$1" x="20.32" y="30.48" rot="R180"/>
-<instance part="PIN8" gate="G$1" x="20.32" y="25.4" rot="R180"/>
 <instance part="+3V32" gate="G$1" x="25.4" y="35.56"/>
 <instance part="GND3" gate="1" x="25.4" y="20.32"/>
 <instance part="P+3" gate="VCC" x="124.46" y="66.04"/>
 <instance part="GND11" gate="1" x="124.46" y="50.8"/>
-<instance part="PIN1" gate="G$1" x="20.32" y="60.96" rot="R180"/>
-<instance part="PIN2" gate="G$1" x="20.32" y="55.88" rot="R180"/>
-<instance part="PIN3" gate="G$1" x="20.32" y="50.8" rot="R180"/>
-<instance part="PIN4" gate="G$1" x="20.32" y="45.72" rot="R180"/>
-<instance part="PIN5" gate="G$1" x="20.32" y="40.64" rot="R180"/>
+<instance part="CONN1" gate="-1" x="119.38" y="60.96" rot="MR0"/>
+<instance part="CONN1" gate="-2" x="119.38" y="55.88" rot="MR0"/>
+<instance part="CONN1" gate="-3" x="119.38" y="40.64" rot="MR0"/>
+<instance part="CONN1" gate="-4" x="119.38" y="35.56" rot="MR0"/>
+<instance part="CONN2" gate="-1" x="127" y="60.96"/>
+<instance part="CONN2" gate="-2" x="127" y="55.88"/>
+<instance part="CONN2" gate="-3" x="127" y="40.64"/>
+<instance part="CONN2" gate="-4" x="127" y="35.56"/>
+<instance part="U$1" gate="-1" x="20.32" y="60.96" rot="MR0"/>
+<instance part="U$1" gate="-2" x="20.32" y="55.88" rot="MR0"/>
+<instance part="U$1" gate="-3" x="20.32" y="50.8" rot="MR0"/>
+<instance part="U$1" gate="-4" x="20.32" y="45.72" rot="MR0"/>
+<instance part="U$1" gate="-5" x="20.32" y="40.64" rot="MR0"/>
+<instance part="U$1" gate="-6" x="20.32" y="35.56" rot="MR0"/>
+<instance part="U$1" gate="-7" x="20.32" y="30.48" rot="MR0"/>
+<instance part="U$1" gate="-8" x="20.32" y="25.4" rot="MR0"/>
+<instance part="CONN1" gate="-DICE" x="185.42" y="60.96" rot="R180"/>
+<instance part="CONN2" gate="-DICE" x="185.42" y="55.88" rot="R180"/>
+<instance part="U$1" gate="-DICE" x="185.42" y="50.8" rot="R180"/>
+<instance part="GND14" gate="1" x="187.96" y="45.72"/>
 </instances>
 <busses>
 </busses>
@@ -10903,10 +10999,10 @@ Sercom 5       -&gt; Master communication</text>
 <junction x="25.4" y="76.2"/>
 </segment>
 <segment>
-<pinref part="PIN7" gate="G$1" pin="P$1"/>
 <pinref part="+3V32" gate="G$1" pin="+3V3"/>
 <wire x1="20.32" y1="30.48" x2="25.4" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="30.48" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="-7" pin="P$1"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -11012,19 +11108,33 @@ Sercom 5       -&gt; Master communication</text>
 <wire x1="160.02" y1="50.8" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PIN20" gate="G$1" pin="P$1"/>
-<pinref part="PIN16" gate="G$1" pin="P$1"/>
 <wire x1="127" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="124.46" y1="55.88" x2="119.38" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="55.88" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
 <junction x="124.46" y="55.88"/>
+<pinref part="CONN1" gate="-2" pin="P$1"/>
+<pinref part="CONN2" gate="-2" pin="P$1"/>
 </segment>
 <segment>
-<pinref part="PIN8" gate="G$1" pin="P$1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="20.32" y1="25.4" x2="25.4" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="25.4" x2="25.4" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="-8" pin="P$1"/>
+</segment>
+<segment>
+<pinref part="CONN1" gate="-DICE" pin="P$1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="185.42" y1="60.96" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="60.96" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="CONN2" gate="-DICE" pin="P$1"/>
+<wire x1="187.96" y1="55.88" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="50.8" x2="187.96" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="55.88" x2="187.96" y2="55.88" width="0.1524" layer="91"/>
+<junction x="187.96" y="55.88"/>
+<pinref part="U$1" gate="-DICE" pin="P$1"/>
+<wire x1="185.42" y1="50.8" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
+<junction x="187.96" y="50.8"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11051,13 +11161,13 @@ Sercom 5       -&gt; Master communication</text>
 <wire x1="160.02" y1="63.5" x2="160.02" y2="60.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="PIN15" gate="G$1" pin="P$1"/>
-<pinref part="PIN19" gate="G$1" pin="P$1"/>
 <wire x1="119.38" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="124.46" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="63.5" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
 <junction x="124.46" y="60.96"/>
+<pinref part="CONN1" gate="-1" pin="P$1"/>
+<pinref part="CONN2" gate="-1" pin="P$1"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -11108,14 +11218,14 @@ Sercom 5       -&gt; Master communication</text>
 </net>
 <net name="SERCOM5_SDA" class="0">
 <segment>
-<pinref part="PIN17" gate="G$1" pin="P$1"/>
-<pinref part="PIN21" gate="G$1" pin="P$1"/>
 <wire x1="119.38" y1="40.64" x2="124.46" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="40.64" x2="127" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="40.64" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
 <junction x="124.46" y="40.64"/>
 <wire x1="124.46" y1="33.02" x2="127" y2="33.02" width="0.1524" layer="91"/>
 <label x="127" y="33.02" size="1.27" layer="95" xref="yes"/>
+<pinref part="CONN1" gate="-3" pin="P$1"/>
+<pinref part="CONN2" gate="-3" pin="P$1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -11161,21 +11271,21 @@ Sercom 5       -&gt; Master communication</text>
 </net>
 <net name="SERCOM_SCL" class="0">
 <segment>
-<pinref part="PIN6" gate="G$1" pin="P$1"/>
 <wire x1="20.32" y1="35.56" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
 <label x="58.42" y="35.56" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="-6" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM5_SCL" class="0">
 <segment>
-<pinref part="PIN22" gate="G$1" pin="P$1"/>
-<pinref part="PIN18" gate="G$1" pin="P$1"/>
 <wire x1="127" y1="35.56" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="35.56" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
 <junction x="121.92" y="35.56"/>
 <wire x1="121.92" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
 <label x="127" y="30.48" size="1.27" layer="95" xref="yes"/>
+<pinref part="CONN1" gate="-4" pin="P$1"/>
+<pinref part="CONN2" gate="-4" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM0_SDA" class="0">
@@ -11186,7 +11296,7 @@ Sercom 5       -&gt; Master communication</text>
 <label x="58.42" y="60.96" size="1.27" layer="95" xref="yes"/>
 <wire x1="20.32" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
 <junction x="55.88" y="60.96"/>
-<pinref part="PIN1" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="-1" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM1_SDA" class="0">
@@ -11197,7 +11307,7 @@ Sercom 5       -&gt; Master communication</text>
 <label x="58.42" y="55.88" size="1.27" layer="95" xref="yes"/>
 <wire x1="20.32" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <junction x="48.26" y="55.88"/>
-<pinref part="PIN2" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="-2" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM2_SDA" class="0">
@@ -11208,7 +11318,7 @@ Sercom 5       -&gt; Master communication</text>
 <label x="58.42" y="50.8" size="1.27" layer="95" xref="yes"/>
 <wire x1="20.32" y1="50.8" x2="40.64" y2="50.8" width="0.1524" layer="91"/>
 <junction x="40.64" y="50.8"/>
-<pinref part="PIN3" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="-3" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM3_SDA" class="0">
@@ -11219,7 +11329,7 @@ Sercom 5       -&gt; Master communication</text>
 <label x="58.42" y="45.72" size="1.27" layer="95" xref="yes"/>
 <wire x1="20.32" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
 <junction x="33.02" y="45.72"/>
-<pinref part="PIN4" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="-4" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM4_SDA" class="0">
@@ -11230,7 +11340,7 @@ Sercom 5       -&gt; Master communication</text>
 <label x="58.42" y="40.64" size="1.27" layer="95" xref="yes"/>
 <wire x1="20.32" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="40.64"/>
-<pinref part="PIN5" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="-5" pin="P$1"/>
 </segment>
 </net>
 </nets>

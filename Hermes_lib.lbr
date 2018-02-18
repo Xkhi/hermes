@@ -981,14 +981,16 @@
 &lt;a href=http://www.mouser.com/ds/2/268/mic5219-779135.pdf&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LDO" x="0" y="0"/>
+<gate name="-DICE" symbol="PIN" x="2.54" y="-12.7" addlevel="request"/>
 </gates>
 <devices>
 <device name="3.3BML" package="MLF-6">
 <connects>
+<connect gate="-DICE" pin="P$1" pad="P$7"/>
 <connect gate="G$1" pin="EN" pad="P$1"/>
 <connect gate="G$1" pin="GND" pad="P$2"/>
 <connect gate="G$1" pin="IN" pad="P$3"/>
-<connect gate="G$1" pin="OUT" pad="P$4 P$7"/>
+<connect gate="G$1" pin="OUT" pad="P$4"/>
 <connect gate="G$1" pin="PG" pad="P$6"/>
 </connects>
 <technologies>

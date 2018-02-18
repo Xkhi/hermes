@@ -642,14 +642,16 @@ DIN A4, landscape with location and doc. field</description>
 &lt;a href=http://www.mouser.com/ds/2/268/mic5219-779135.pdf&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="LDO" x="0" y="0"/>
+<gate name="-DICE" symbol="PIN" x="2.54" y="-12.7" addlevel="request"/>
 </gates>
 <devices>
 <device name="3.3BML" package="MLF-6">
 <connects>
+<connect gate="-DICE" pin="P$1" pad="P$7"/>
 <connect gate="G$1" pin="EN" pad="P$1"/>
 <connect gate="G$1" pin="GND" pad="P$2"/>
 <connect gate="G$1" pin="IN" pad="P$3"/>
-<connect gate="G$1" pin="OUT" pad="P$4 P$7"/>
+<connect gate="G$1" pin="OUT" pad="P$4"/>
 <connect gate="G$1" pin="PG" pad="P$6"/>
 </connects>
 <technologies>
@@ -10880,10 +10882,10 @@ Sercom 5       -&gt; Master communication</text>
 <instance part="CONN1" gate="-2" x="119.38" y="55.88" rot="MR0"/>
 <instance part="CONN1" gate="-3" x="119.38" y="40.64" rot="MR0"/>
 <instance part="CONN1" gate="-4" x="119.38" y="35.56" rot="MR0"/>
-<instance part="CONN2" gate="-1" x="127" y="60.96"/>
-<instance part="CONN2" gate="-2" x="127" y="55.88"/>
-<instance part="CONN2" gate="-3" x="127" y="40.64"/>
-<instance part="CONN2" gate="-4" x="127" y="35.56"/>
+<instance part="CONN2" gate="-1" x="127" y="35.56" rot="MR180"/>
+<instance part="CONN2" gate="-3" x="127" y="55.88"/>
+<instance part="CONN2" gate="-2" x="127" y="40.64"/>
+<instance part="CONN2" gate="-4" x="127" y="60.96"/>
 <instance part="U$1" gate="-1" x="20.32" y="60.96" rot="MR0"/>
 <instance part="U$1" gate="-2" x="20.32" y="55.88" rot="MR0"/>
 <instance part="U$1" gate="-3" x="20.32" y="50.8" rot="MR0"/>
@@ -10896,6 +10898,7 @@ Sercom 5       -&gt; Master communication</text>
 <instance part="CONN2" gate="-DICE" x="185.42" y="55.88" rot="R180"/>
 <instance part="U$1" gate="-DICE" x="185.42" y="50.8" rot="R180"/>
 <instance part="GND14" gate="1" x="187.96" y="45.72"/>
+<instance part="IC1" gate="-DICE" x="185.42" y="66.04" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -11114,7 +11117,7 @@ Sercom 5       -&gt; Master communication</text>
 <wire x1="124.46" y1="55.88" x2="124.46" y2="53.34" width="0.1524" layer="91"/>
 <junction x="124.46" y="55.88"/>
 <pinref part="CONN1" gate="-2" pin="P$1"/>
-<pinref part="CONN2" gate="-2" pin="P$1"/>
+<pinref part="CONN2" gate="-3" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -11135,6 +11138,10 @@ Sercom 5       -&gt; Master communication</text>
 <pinref part="U$1" gate="-DICE" pin="P$1"/>
 <wire x1="185.42" y1="50.8" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
 <junction x="187.96" y="50.8"/>
+<pinref part="IC1" gate="-DICE" pin="P$1"/>
+<wire x1="185.42" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="66.04" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
+<junction x="187.96" y="60.96"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -11163,11 +11170,11 @@ Sercom 5       -&gt; Master communication</text>
 <segment>
 <wire x1="119.38" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="124.46" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="63.5" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
-<junction x="124.46" y="60.96"/>
 <pinref part="CONN1" gate="-1" pin="P$1"/>
-<pinref part="CONN2" gate="-1" pin="P$1"/>
+<pinref part="CONN2" gate="-4" pin="P$1"/>
+<wire x1="127" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+<junction x="124.46" y="60.96"/>
 </segment>
 </net>
 <net name="LED" class="0">
@@ -11225,7 +11232,7 @@ Sercom 5       -&gt; Master communication</text>
 <wire x1="124.46" y1="33.02" x2="127" y2="33.02" width="0.1524" layer="91"/>
 <label x="127" y="33.02" size="1.27" layer="95" xref="yes"/>
 <pinref part="CONN1" gate="-3" pin="P$1"/>
-<pinref part="CONN2" gate="-3" pin="P$1"/>
+<pinref part="CONN2" gate="-2" pin="P$1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -11278,14 +11285,14 @@ Sercom 5       -&gt; Master communication</text>
 </net>
 <net name="SERCOM5_SCL" class="0">
 <segment>
-<wire x1="127" y1="35.56" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="35.56" x2="119.38" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="35.56" x2="121.92" y2="30.48" width="0.1524" layer="91"/>
-<junction x="121.92" y="35.56"/>
 <wire x1="121.92" y1="30.48" x2="127" y2="30.48" width="0.1524" layer="91"/>
 <label x="127" y="30.48" size="1.27" layer="95" xref="yes"/>
 <pinref part="CONN1" gate="-4" pin="P$1"/>
-<pinref part="CONN2" gate="-4" pin="P$1"/>
+<pinref part="CONN2" gate="-1" pin="P$1"/>
+<wire x1="127" y1="35.56" x2="121.92" y2="35.56" width="0.1524" layer="91"/>
+<junction x="121.92" y="35.56"/>
 </segment>
 </net>
 <net name="SERCOM0_SDA" class="0">

@@ -10847,11 +10847,11 @@ Sercom 5       -&gt; Master communication</text>
 <instance part="C3" gate="G$1" x="53.34" y="109.22" rot="R270"/>
 <instance part="GND5" gate="1" x="45.72" y="104.14"/>
 <instance part="+3V31" gate="G$1" x="25.4" y="81.28"/>
-<instance part="R7" gate="G$1" x="55.88" y="68.58" rot="R90"/>
-<instance part="R6" gate="G$1" x="48.26" y="68.58" rot="R90"/>
+<instance part="R7" gate="G$1" x="25.4" y="68.58" rot="R90"/>
+<instance part="R6" gate="G$1" x="55.88" y="68.58" rot="R90"/>
 <instance part="R5" gate="G$1" x="40.64" y="68.58" rot="R90"/>
 <instance part="R3" gate="G$1" x="33.02" y="68.58" rot="R90"/>
-<instance part="R2" gate="G$1" x="25.4" y="68.58" rot="R90"/>
+<instance part="R2" gate="G$1" x="48.26" y="68.58" rot="R90"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="C1" gate="G$1" x="50.8" y="139.7"/>
 <instance part="GND7" gate="1" x="50.8" y="129.54"/>
@@ -10886,11 +10886,11 @@ Sercom 5       -&gt; Master communication</text>
 <instance part="CONN2" gate="-3" x="127" y="55.88"/>
 <instance part="CONN2" gate="-2" x="127" y="40.64"/>
 <instance part="CONN2" gate="-4" x="127" y="60.96"/>
-<instance part="U$1" gate="-1" x="20.32" y="60.96" rot="MR0"/>
-<instance part="U$1" gate="-2" x="20.32" y="55.88" rot="MR0"/>
+<instance part="U$1" gate="-1" x="20.32" y="40.64" rot="MR0"/>
+<instance part="U$1" gate="-5" x="20.32" y="55.88" rot="MR0"/>
 <instance part="U$1" gate="-3" x="20.32" y="50.8" rot="MR0"/>
 <instance part="U$1" gate="-4" x="20.32" y="45.72" rot="MR0"/>
-<instance part="U$1" gate="-5" x="20.32" y="40.64" rot="MR0"/>
+<instance part="U$1" gate="-2" x="20.32" y="60.96" rot="MR0"/>
 <instance part="U$1" gate="-6" x="20.32" y="35.56" rot="MR0"/>
 <instance part="U$1" gate="-7" x="20.32" y="30.48" rot="MR0"/>
 <instance part="U$1" gate="-8" x="20.32" y="25.4" rot="MR0"/>
@@ -10980,26 +10980,26 @@ Sercom 5       -&gt; Master communication</text>
 <wire x1="167.64" y1="55.88" x2="167.64" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="76.2" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="76.2" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="76.2" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="33.02" y1="73.66" x2="33.02" y2="76.2" width="0.1524" layer="91"/>
 <junction x="33.02" y="76.2"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="40.64" y1="73.66" x2="40.64" y2="76.2" width="0.1524" layer="91"/>
 <junction x="40.64" y="76.2"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="73.66" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
-<junction x="48.26" y="76.2"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="73.66" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="+3V31" gate="G$1" pin="+3V3"/>
 <wire x1="25.4" y1="78.74" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="25.4" y1="73.66" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
 <junction x="25.4" y="76.2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="73.66" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<junction x="48.26" y="76.2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="73.66" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V32" gate="G$1" pin="+3V3"/>
@@ -11297,24 +11297,24 @@ Sercom 5       -&gt; Master communication</text>
 </net>
 <net name="SERCOM0_SDA" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="55.88" y1="63.5" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 <label x="58.42" y="60.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="55.88" y1="63.5" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="-2" pin="P$1"/>
 <wire x1="20.32" y1="60.96" x2="55.88" y2="60.96" width="0.1524" layer="91"/>
 <junction x="55.88" y="60.96"/>
-<pinref part="U$1" gate="-1" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM1_SDA" class="0">
 <segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="48.26" y1="63.5" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
 <label x="58.42" y="55.88" size="1.27" layer="95" xref="yes"/>
 <wire x1="20.32" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="-5" pin="P$1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="48.26" y1="55.88" x2="58.42" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="63.5" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <junction x="48.26" y="55.88"/>
-<pinref part="U$1" gate="-2" pin="P$1"/>
 </segment>
 </net>
 <net name="SERCOM2_SDA" class="0">
@@ -11341,13 +11341,13 @@ Sercom 5       -&gt; Master communication</text>
 </net>
 <net name="SERCOM4_SDA" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="63.5" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="40.64" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
 <label x="58.42" y="40.64" size="1.27" layer="95" xref="yes"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="40.64" x2="58.42" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="63.5" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="-1" pin="P$1"/>
 <wire x1="20.32" y1="40.64" x2="25.4" y2="40.64" width="0.1524" layer="91"/>
 <junction x="25.4" y="40.64"/>
-<pinref part="U$1" gate="-5" pin="P$1"/>
 </segment>
 </net>
 </nets>

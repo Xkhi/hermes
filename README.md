@@ -9,12 +9,12 @@ Project Hermes is a communication hub for sensors, developed specifically for WU
 - [x] Requirements definition
 - [x] Conceptual design
 - [x] Schematics
-- [ ] PCB
+- [x] PCB
 - [ ] Manufacture
 - [ ] Programming
 
 ### Status Overview
-The project has finished establishing requirements, concepts and schematics, it is now in the PCB layout design stage.
+The project has finished establishing requirements, concepts and schematics, and the PCB layout design has finished. The manufacturing process will begin soon.
 
 ## Specifications
 The aim for the device are listed as follows:

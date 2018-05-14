@@ -327,22 +327,6 @@ DIN A4, landscape with location and doc. field</description>
 <text x="4" y="4" size="1.27" layer="25">&gt;NAME</text>
 <circle x="-2.5" y="2.5" radius="0.353553125" width="0.127" layer="21"/>
 </package>
-<package name="MLF-6">
-<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
-<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
-<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
-<circle x="-0.75" y="0.75" radius="0.06" width="0.127" layer="21"/>
-<smd name="P$1" x="-1" y="0.65" dx="0.75" dy="0.35" layer="1"/>
-<smd name="P$2" x="-1" y="0" dx="0.75" dy="0.35" layer="1"/>
-<smd name="P$3" x="-1" y="-0.65" dx="0.75" dy="0.35" layer="1"/>
-<smd name="P$4" x="1" y="-0.65" dx="0.75" dy="0.35" layer="1"/>
-<smd name="P$5" x="1" y="0" dx="0.75" dy="0.35" layer="1"/>
-<smd name="P$6" x="1" y="0.65" dx="0.75" dy="0.35" layer="1"/>
-<smd name="P$7" x="0" y="0" dx="1.5" dy="0.9" layer="1" rot="R90"/>
-<text x="-1" y="1.25" size="0.3048" layer="25">&gt;NAME</text>
-<text x="-1" y="-1.5" size="0.3048" layer="27">&gt;VALUE</text>
-</package>
 <package name="2X1.6">
 <wire x1="-1" y1="0.8" x2="1" y2="0.8" width="0.127" layer="21"/>
 <wire x1="1" y1="0.8" x2="1" y2="-0.8" width="0.127" layer="21"/>
@@ -485,19 +469,6 @@ DIN A4, landscape with location and doc. field</description>
 <wire x1="12.7" y1="-12.7" x2="12.7" y2="10.16" width="0.254" layer="94"/>
 <wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
 <text x="-12.7" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="LDO" urn="urn:adsk.eagle:symbol:1286347/1+">
-<pin name="IN" x="-10.16" y="5.08" visible="pin" length="middle"/>
-<pin name="GND" x="-10.16" y="-5.08" visible="pin" length="middle"/>
-<pin name="EN" x="-10.16" y="0" visible="pin" length="middle"/>
-<pin name="OUT" x="10.16" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="PG" x="10.16" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="5.08" y1="-7.62" x2="-5.08" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
-<text x="-5.08" y="12.7" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="10.16" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="XTAL">
 <wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.254" layer="94"/>
@@ -654,30 +625,6 @@ DIN A4, landscape with location and doc. field</description>
 <package3dinstances>
 <package3dinstance package3d_urn="urn:adsk.eagle:package:1030299/2"/>
 </package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MIC5219-" prefix="IC">
-<description>&lt;h1&gt;MIC5219 500mA-Peak Output LDO Regulator&lt;/h1&gt;
-&lt;hr&gt;
-&lt;a href=http://www.mouser.com/ds/2/268/mic5219-779135.pdf&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="LDO" x="0" y="0"/>
-<gate name="-DICE" symbol="PIN" x="2.54" y="-12.7" addlevel="request"/>
-</gates>
-<devices>
-<device name="3.3BML" package="MLF-6">
-<connects>
-<connect gate="-DICE" pin="P$1" pad="P$7"/>
-<connect gate="G$1" pin="EN" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="IN" pad="P$3"/>
-<connect gate="G$1" pin="OUT" pad="P$4"/>
-<connect gate="G$1" pin="PG" pad="P$6"/>
-</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -10776,7 +10723,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/1" value="100nF"/>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/1" value="1uF"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/1" value="100nF"/>
-<part name="VDO" library="Hermes_lib" deviceset="MIC5219-" device="3.3BML"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0201" package3d_urn="urn:adsk.eagle:package:23690/1" value="2.2uF"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -10939,7 +10885,6 @@ Sercom 5       -&gt; Master communication</text>
 <instance part="PEER2" gate="-DICE" x="185.42" y="55.88" rot="R180"/>
 <instance part="SLAVE" gate="-DICE" x="185.42" y="50.8" rot="R180"/>
 <instance part="GND14" gate="1" x="187.96" y="45.72"/>
-<instance part="VDO" gate="-DICE" x="185.42" y="66.04" rot="R180"/>
 <instance part="U$1" gate="G$1" x="35.56" y="149.86"/>
 </instances>
 <busses>
@@ -11177,10 +11122,6 @@ Sercom 5       -&gt; Master communication</text>
 <pinref part="SLAVE" gate="-DICE" pin="P$1"/>
 <wire x1="185.42" y1="50.8" x2="187.96" y2="50.8" width="0.1524" layer="91"/>
 <junction x="187.96" y="50.8"/>
-<pinref part="VDO" gate="-DICE" pin="P$1"/>
-<wire x1="185.42" y1="66.04" x2="187.96" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="66.04" x2="187.96" y2="60.96" width="0.1524" layer="91"/>
-<junction x="187.96" y="60.96"/>
 </segment>
 </net>
 <net name="VCC" class="0">

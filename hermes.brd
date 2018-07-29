@@ -165,6 +165,22 @@ Waseda University
 Sugano Lab</text>
 <text x="58.42" y="16.51" size="0.508" layer="25" ratio="2" rot="R90">Design by
 Javier Alvarez</text>
+<wire x1="43.688" y1="19.431" x2="43.688" y2="19.05" width="0.1524" layer="25"/>
+<wire x1="43.434" y1="19.05" x2="43.688" y2="19.05" width="0.1524" layer="25"/>
+<wire x1="43.688" y1="19.05" x2="43.942" y2="19.05" width="0.1524" layer="25"/>
+<wire x1="43.942" y1="19.05" x2="43.688" y2="18.542" width="0.1524" layer="25"/>
+<wire x1="43.688" y1="18.542" x2="43.434" y2="19.05" width="0.1524" layer="25"/>
+<wire x1="43.434" y1="18.542" x2="43.688" y2="18.542" width="0.1524" layer="25"/>
+<wire x1="43.688" y1="18.542" x2="43.942" y2="18.542" width="0.1524" layer="25"/>
+<wire x1="43.688" y1="18.542" x2="43.688" y2="18.161" width="0.1524" layer="25"/>
+<wire x1="45.466" y1="24.765" x2="45.466" y2="24.384" width="0.1524" layer="25"/>
+<wire x1="45.212" y1="24.384" x2="45.466" y2="24.384" width="0.1524" layer="25"/>
+<wire x1="45.466" y1="24.384" x2="45.72" y2="24.384" width="0.1524" layer="25"/>
+<wire x1="45.72" y1="24.384" x2="45.466" y2="23.876" width="0.1524" layer="25"/>
+<wire x1="45.466" y1="23.876" x2="45.212" y2="24.384" width="0.1524" layer="25"/>
+<wire x1="45.212" y1="23.876" x2="45.466" y2="23.876" width="0.1524" layer="25"/>
+<wire x1="45.466" y1="23.876" x2="45.72" y2="23.876" width="0.1524" layer="25"/>
+<wire x1="45.466" y1="23.876" x2="45.466" y2="23.495" width="0.1524" layer="25"/>
 </plain>
 <libraries>
 <library name="rcl" urn="urn:adsk.eagle:library:334">
@@ -1741,7 +1757,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="54.61" y="41.91" size="0.508" layer="25" rot="R90"/>
 </element>
 <element name="LED1" library="eagle-ltspice" library_urn="urn:adsk.eagle:library:217" package="LED_SML0603" package3d_urn="urn:adsk.eagle:package:13315/1" value="" x="44.45" y="24.13" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.45" y="23.13" size="0.508" layer="25" rot="R90"/>
+<attribute name="NAME" x="43.831" y="23.384" size="0.508" layer="25" rot="R90"/>
 <attribute name="SPICEMODEL" value="NONE" x="44.45" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="D" x="44.45" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICETYPE" value="diode" x="44.45" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
